@@ -31,6 +31,7 @@
 
 		<!-- Medipro CSS -->
         <link rel="stylesheet" href="{{ asset('user_area/css/normalize.css') }}">
+        <link rel="stylesheet" href="{{ asset('user_area/css/join_us.css') }}">
         <link rel="stylesheet" href="{{ asset('user_area/style.css') }}">
         <link rel="stylesheet" href="{{ asset('user_area/css/responsive.css') }}">
 
