@@ -7,7 +7,7 @@
 
 @section('content')
 <!-- Start Contact Us -->
-<section class="contact-us section">
+    <section class="contact-us section">
     <div class="container">
         <div class="inner">
             <div class="col-lg-12">
