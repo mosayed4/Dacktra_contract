@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\indexController;
+use App\Http\Controllers\JoinusController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -8,5 +9,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/', [indexController::class, 'index']);
+Route::get('/', [JoinusController::class, 'showEnglishForm'])->name('english.form');
+Route::get('/arabic', [JoinusController::class,'showArabicForm'])->name('arabic.form');
+
 

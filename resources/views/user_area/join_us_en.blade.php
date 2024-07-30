@@ -1,9 +1,11 @@
 @extends('layouts.app')
-@section('styles')
-<style>
-
-</style>
+@section('header_left_side')
+<a class="navbar-brand"><img src="{{asset('user_area/white_logoo.png')}}" alt="logo" style="height:100px;"/></a>
 @endsection
+@section('header_right_side')
+<a href="{{ route('arabic.form') }}" style="color: #1A76D1;font-size:18px;font-weight:600">عربي</a>
+@endsection
+
 
 @section('content')
 <!-- Start Contact Us -->

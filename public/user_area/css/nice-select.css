@@ -1,4 +1,4 @@
-.nice-select {
+/* .nice-select {
     -webkit-tap-highlight-color: transparent;
     background-color: #fff;
     border-radius: 5px;
@@ -37,9 +37,9 @@
 .nice-select.open,
 .nice-select:focus {
     border-color: #999;
-}
+} */
 
-.nice-select:after {
+/* .nice-select:after {
     border-bottom: 2px solid #999;
     border-right: 2px solid #999;
     content: '';
@@ -59,7 +59,7 @@
     -webkit-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out;
     width: 8px;
-}
+} */
 
 .nice-select.open:after {
     -webkit-transform: rotate(-135deg);
