@@ -2,27 +2,28 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Doctor_date_ar;
-use App\Models\Doctor_date_en;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
-
-class JoinusController extends Controller
+class DoctorDateArController extends Controller
 {
-    public function showEnglishForm(){
+    //
 
-        return view('user_area.join_us_en');
-    }
-    
-    public function showArabicForm()
-       {
-        
-        return view('user_area.join_us_ar');
+   // Display a listing of the doctors
+   public function index()
+   {
+       $doctors = Doctor_date_ar::all();
+    //    return view('doctors.index', compact('doctors'));
+   }
 
-        }
+   // Show the form for creating a new doctor
+   public function create()
+   {
+       return view('doctors.create');
+   }
 
-            // Store a newly created doctor in the database
+   // Store a newly created doctor in the database
    public function store(Request $request)
    {
        $validatedData = $request->validate([
@@ -43,16 +44,17 @@ class JoinusController extends Controller
        ]);
 
        $validatedData['password'] = Hash::make($validatedData['password']);
+
+       $doctor = Doctor_date_ar::create($validatedData);
+
+       // Store the doctor's ID in the session
+       session([
+                'id' => $doctor->id
+    
+            ]);
+
+       return redirect()->route('layouts.app')->with('success', 'Doctor created successfully!');
+   }
+    
    
-       try {
-        $doctor = Doctor_date_en::create($validatedData);
-
-        session(['id' => $doctor->id]);
-
-        return redirect()->route('user_area.join_us_en')->with('success', 'Doctor created successfully!');
-     } 
-    catch (\Exception $e) {
-        return redirect()->back()->withErrors(['error' => 'Failed to create doctor.']);
-    }
-     
-}}
+}
