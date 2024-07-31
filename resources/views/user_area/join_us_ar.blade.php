@@ -1,5 +1,4 @@
 @extends('layouts.app')
-<<<<<<< HEAD
 @section('header_left_side')
 <a href="{{ route('english.form') }}" style="color: #1A76D1;font-size:18px;font-weight:600">English</a>
 @endsection
@@ -102,7 +101,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group" >
                                     <input type="email" name="email" placeholder="البريد الإلكتروني" required="">
-=======
+  
 @section('styles')
 <style>
 
@@ -124,21 +123,21 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <input type="text" name="name" placeholder="{{ __('messages.name') }}" required="">
->>>>>>> b743d873467fd9730775d9b0a2602ed45e43a92c
+  
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
-<<<<<<< HEAD
+  
                                     <input type="text" name="phone" placeholder="الهاتف" required="">
-=======
+  
                                     <input type="email" name="email" placeholder="{{ __('messages.email') }}" required="">
->>>>>>> b743d873467fd9730775d9b0a2602ed45e43a92c
+  
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
-<<<<<<< HEAD
+  
                                     <input type="password" name="password" placeholder="كلمة المرور" required="">
                                 </div>
                             </div>
@@ -366,7 +365,7 @@
                         <div class="file-name" id="professional-license-name">لم يتم اختيار ملف</div>
                     </div>
                 </div>
-=======
+  
                                     <input type="text" name="phone" placeholder="{{ __('messages.phone') }}" required="">
                                 </div>
                             </div>
@@ -609,88 +608,88 @@
                                 </div>
                             </div>
                             
->>>>>>> b743d873467fd9730775d9b0a2602ed45e43a92c
+  
 
                             <div class="col-lg-12">
                                 <div class="form-group">
                                     <div class="button">
-<<<<<<< HEAD
+  
                                         <button type="submit" class="btn">إرسال الآن</button>
-=======
+  
                                         <button type="submit" class="btn">{{ __('messages.submit') }}</button>
->>>>>>> b743d873467fd9730775d9b0a2602ed45e43a92c
+  
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </form>
-<<<<<<< HEAD
+  
                     <!--/ End Form -->
-=======
->>>>>>> b743d873467fd9730775d9b0a2602ed45e43a92c
+  
+  
                 </div>
             </div>
         </div>
     </div>
 </section>
-<<<<<<< HEAD
+  
 <!--/ End Contact Us -->
-=======
+  
 
->>>>>>> b743d873467fd9730775d9b0a2602ed45e43a92c
+  
 @endsection
 @section('scripts')
 <script>
     document.getElementById('scientific-certificate').addEventListener('change', function() {
-<<<<<<< HEAD
+  
         const fileName = this.files[0] ? this.files[0].name : 'لم يتم اختيار ملف';
-=======
+  
         const fileName = this.files[0] ? this.files[0].name : 'No file chosen';
->>>>>>> b743d873467fd9730775d9b0a2602ed45e43a92c
+  
         document.getElementById('scientific-certificate-name').textContent = fileName;
     });
 
     document.getElementById('syndicate-image').addEventListener('change', function() {
-<<<<<<< HEAD
+  
         const fileName = this.files[0] ? this.files[0].name : 'لم يتم اختيار ملف';
         document.getElementById('syndicate-image-name').textContent = fileName;
     });
     document.getElementById('clinic-photos').addEventListener('change', function() {
     const fileName = this.files[0] ? this.files[0].name : 'لم يتم اختيار ملف';
-=======
+  
         const fileName = this.files[0] ? this.files[0].name : 'No file chosen';
         document.getElementById('syndicate-image-name').textContent = fileName;
     });
     document.getElementById('clinic-photos').addEventListener('change', function() {
     const fileName = this.files[0] ? this.files[0].name : 'No file chosen';
->>>>>>> b743d873467fd9730775d9b0a2602ed45e43a92c
+  
     document.getElementById('clinic-photos-name').textContent = fileName;
 });
 
 document.getElementById('logo').addEventListener('change', function() {
-<<<<<<< HEAD
+  
     const fileName = this.files[0] ? this.files[0].name : 'لم يتم اختيار ملف';
-=======
+  
     const fileName = this.files[0] ? this.files[0].name : 'No file chosen';
->>>>>>> b743d873467fd9730775d9b0a2602ed45e43a92c
+  
     document.getElementById('logo-name').textContent = fileName;
 });
 
 document.getElementById('doctor-image').addEventListener('change', function() {
-<<<<<<< HEAD
+  
     const fileName = this.files[0] ? this.files[0].name : 'لم يتم اختيار ملف';
-=======
+  
     const fileName = this.files[0] ? this.files[0].name : 'No file chosen';
->>>>>>> b743d873467fd9730775d9b0a2602ed45e43a92c
+  
     document.getElementById('doctor-image-name').textContent = fileName;
 });
 
 document.getElementById('professional-license').addEventListener('change', function() {
-<<<<<<< HEAD
+  
     const fileName = this.files[0] ? this.files[0].name : 'لم يتم اختيار ملف';
-=======
+  
     const fileName = this.files[0] ? this.files[0].name : 'No file chosen';
->>>>>>> b743d873467fd9730775d9b0a2602ed45e43a92c
+  
     document.getElementById('professional-license-name').textContent = fileName;
 });
 </script>
