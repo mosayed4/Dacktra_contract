@@ -10,7 +10,12 @@
 
         <div class="form-inline">
 
+<<<<<<< HEAD
         @yield('header_right_side')
+=======
+          <a href={{ route('language.change', 'en') }}style="color: #1A76D1;font-size:17px;font-weight:600 ">English</a>
+        <a href={{ route('language.change', 'ar') }} style="color: #1A76D1;font-size:17px;font-weight:600 ">العربيه</a>
+>>>>>>> b743d873467fd9730775d9b0a2602ed45e43a92c
 
 
         </div>
