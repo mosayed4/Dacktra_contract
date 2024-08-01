@@ -13,20 +13,20 @@ return new class extends Migration
     {
         Schema::create('doctor_date_ars', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email');
-            $table->string('phone');
-            $table->string('password');
-            $table->string('department');
-            $table->enum('job', array('clinic','home_visit.','online_consultant'))->nullable()->change();
-            $table->string('location');
-            $table->string('city');
-            $table->string('scientific_certificate_image');
-            $table->string('syndicate_image');
-            $table->string('clinic_photos');
-            $table->string('logo');
-            $table->string('doctor_image');
-            $table->string('professional_license');
+            $table->string('الاسم');
+            $table->string('البريد');
+            $table->string('الهاتف');
+            $table->string('كلمه-المرور');
+            $table->string('القسم');
+            $table->enum('عمل', array('العيادة','الزيارة-المنزليه.','الاستشارة-اونلاين'))->nullable()->change();
+            $table->string('الموقع');
+            $table->string('المدينة');
+            $table->string('الشهادة-العلمية');
+            $table->string('كارنيه-النقابة');
+            $table->string('صوره-العياده');
+            $table->string('الشعار');
+            $table->string('صوره-الطبيب');
+            $table->string('الرخصه-المهنيه');
 
 
 

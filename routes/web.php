@@ -13,6 +13,7 @@ use App\Http\Controllers\FormController;
 Route::get('/', [JoinusController::class, 'showEnglishForm'])->name('english.form');
 Route::post('/join-us', [JoinusController::class, 'store'])->name('englishsend.form');
 Route::get('/arabic', [JoinusController::class,'showArabicForm'])->name('arabic.form');
+Route::post('/doctors/save', [JoinusController::class, 'saveDoctor'])->name('doctors.save');
 
 
 Route::get('/form', [FormController::class, 'showForm'])->name('form.show');

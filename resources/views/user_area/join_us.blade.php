@@ -15,7 +15,7 @@
                     <h2>Join With Us</h2>
                     <p>If you have any questions please feel free to contact with us.</p>
                     <!-- Form -->
-                    <form class="form" method="post">
+                    <form class="form" method="post"  action=>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">

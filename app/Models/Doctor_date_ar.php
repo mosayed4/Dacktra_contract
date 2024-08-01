@@ -10,5 +10,21 @@ class Doctor_date_ar extends Model
     use HasFactory;
 
     
-    protected $fillable = ['name', 'email', 'phone', 'password', 'department','job','city', 'location','scientific_certificate_image','syndicate_image', 'clinic_photos','logo','doctor_image','professional_license'];
+    protected $fillable = [
+            'الاسم',
+            'البريد',
+            'الهاتف',
+            'كلمه-المرور',
+            'القسم',
+            'عمل',
+            'الموقع',
+            'المدينة',
+            'الشهادة-العلمية',
+            'كارنيه-النقابة',
+            'صوره-العياده',
+            'الشعار',
+            'صوره-الطبيب',
+            'الرخصه-المهنيه'];
 }
+
+; 
